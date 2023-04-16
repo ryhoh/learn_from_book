@@ -43,4 +43,10 @@ Route::get('/', function () {
 // });
 
 // Route::get('hello', 'App\Http\Controllers\HelloController@index');
-Route::get('hello/{id?}/{pass?}', 'App\Http\Controllers\HelloController@index');
+// Route::get('hello/{id?}/{pass?}', 'App\Http\Controllers\HelloController@index');
+
+// Route::Get('hello', 'App\Http\Controllers\HelloController@index');
+// Route::Get('hello/other', 'App\Http\Controllers\HelloController@other');
+
+// Route::get('hello', 'App\Http\Controllers\Hellocontroller');
+Route::get('hello', 'App\Http\Controllers\Hellocontroller@index');
