@@ -49,4 +49,11 @@ Route::get('/', function () {
 // Route::Get('hello/other', 'App\Http\Controllers\HelloController@other');
 
 // Route::get('hello', 'App\Http\Controllers\Hellocontroller');
-Route::get('hello', 'App\Http\Controllers\Hellocontroller@index');
+// Route::get('hello', 'App\Http\Controllers\Hellocontroller@index');
+
+// Route::get('hello', function() {
+//     return view('hello.index');
+// });
+
+Route::get('hello', 'App\Http\Controllers\HelloController@index');
+Route::post('hello', 'App\Http\Controllers\HelloController@post');
